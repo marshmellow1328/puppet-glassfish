@@ -24,6 +24,8 @@ Puppet::Type.type(:domain).provide(:asadmin,
 #        `svcadm refresh @resource[:name]`
 #      end
     end
+    
+    asadmin_exec(['enable-secure-admin'])
   end
 
   def destroy
